@@ -1,0 +1,132 @@
+<!-- Auth Modal -->
+<div class="modal-overlay" id="auth-modal">
+    <div class="modal auth-modal">
+        <span class="close-modal">&times;</span>
+        <div class="auth-tabs">
+            <div class="auth-tab active" data-tab="login">Login</div>
+            <div class="auth-tab" data-tab="register">Register</div>
+        </div>
+        <form id="login-form" class="auth-form active">
+            <div class="form-group">
+                <label for="login-email">Email</label>
+                <input type="email" id="login-email" required>
+            </div>
+            <div class="form-group">
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" required>
+            </div>
+            <button type="submit" class="auth-btn">Login</button>
+            <div class="auth-footer">
+                Don't have an account? <span class="switch-auth">Register</span>
+            </div>
+        </form>
+        <form id="register-form" class="auth-form">
+            <div class="form-group">
+                <label for="register-name">Full Name</label>
+                <input type="text" id="register-name" required>
+            </div>
+            <div class="form-group">
+                <label for="register-email">Email</label>
+                <input type="email" id="register-email" required>
+            </div>
+            <div class="form-group">
+                <label for="register-password">Password</label>
+                <input type="password" id="register-password" required>
+            </div>
+            <div class="form-group">
+                <label for="register-confirm">Confirm Password</label>
+                <input type="password" id="register-confirm" required>
+            </div>
+            <button type="submit" class="auth-btn">Register</button>
+            <div class="auth-footer">
+                Already have an account? <span class="switch-auth">Login</span>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Payment Modal -->
+<div class="modal-overlay" id="payment-modal">
+    <div class="modal payment-modal">
+        <div class="payment-header-teal">
+            <h2>MoMo Payments [For Ghanaians Only]</h2>
+            <span class="close-modal">&times;</span>
+        </div>
+
+        <div class="payment-content">
+            <div class="payment-instructions-section">
+                <div class="money-icon-container">
+                    <div class="money-icon">
+                        <div class="money-bills">
+                            <div class="bill bill-1"></div>
+                            <div class="bill bill-2"></div>
+                            <div class="bill bill-3"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="instructions-container">
+                    <h3>Send e-money</h3>
+                    <ol>
+                        <li>Dial *110#</li>
+                        <li>Select 1: Send Money</li>
+                        <li>Select recipient type</li>
+                        <li>Follow prompts</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="payment-guide-section">
+                <h4>GUIDE</h4>
+                <p><strong>NB:</strong> Use Invoice Number "<span class="invoice-number">ML629C154.161.152.1278</span>" as your payment reference.</p>
+            </div>
+
+            <div class="payment-details-box">
+                <ul>
+                    <li>Follow the steps above to make payment</li>
+                    <li>VODAFONE CASH (Ghanaian Admin) <span class="phone-number">0503769223</span></li>
+                    <li>Account Name: MIKE ICON ENTERPRISE</li>
+                </ul>
+            </div>
+
+            <div class="upload-instruction">
+                <p>Click on icon below to upload payment screenshot</p>
+            </div>
+
+            <form id="momo-payment-form">
+                <div class="form-group">
+                    <label for="customer-email">Email Address*</label>
+                    <input type="email" id="customer-email" placeholder="your.email@example.com" required>
+                </div>
+
+                <div class="upload-section">
+                    <input type="file" id="payment-screenshot" accept="image/*" style="display: none;">
+                    <label for="payment-screenshot" class="upload-btn">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        Upload Payment Screenshot*
+                    </label>
+                    <div class="file-name" id="file-name"></div>
+                </div>
+
+                <button type="submit" class="confirm-btn" id="confirm-btn">Confirm Payment</button>
+            </form>
+
+            <div class="website-footer">
+                <i class="fas fa-globe"></i>
+                Powered by ElitCards
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Success Modal -->
+<div class="modal-overlay" id="success-modal">
+    <div class="modal success-modal">
+        <div class="success-icon">
+            <i class="fas fa-check-circle"></i>
+        </div>
+        <h2 class="success-title">Payment Successful!</h2>
+        <p class="success-message">Your premium virtual card details will be sent to your email. Thank you for choosing <span class="highlight">ElitCards</span>!</p>
+        <a href="#" class="back-to-shop products-link">Back to Shop</a>
+    </div>
+</div>
